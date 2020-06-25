@@ -8,7 +8,7 @@
 <script>
 import FormularioLogin from "../components/FormularioLogin";
 export default {
-  name: "Login",
+  name: 'Login',
   components: {
     FormularioLogin
   },

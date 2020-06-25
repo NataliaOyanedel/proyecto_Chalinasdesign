@@ -12,6 +12,8 @@ export default {
   components: {
     FormularioRegistro
   },
+
+
   data() {
     return {
       datos: {
@@ -33,3 +35,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.about { 
+  text-align: center;
+  padding-top: 100px;
+ color: palevioletred;
+
+}
+
+</style>

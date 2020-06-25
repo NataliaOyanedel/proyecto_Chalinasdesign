@@ -42,11 +42,11 @@ export default {
 </script>
 
 
-<style  scoped>
+<style  >
 #FormularioLogin {
   width: 40%;
   margin: auto;
-  border: 2px solid;
+  border: 1px solid;
   padding: 20px;
   border-radius: 15px;
 }
