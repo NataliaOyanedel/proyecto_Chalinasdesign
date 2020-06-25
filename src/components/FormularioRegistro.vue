@@ -50,8 +50,11 @@ export default {
     border: 1px solid;
     padding: 20px;
     border-radius: 15px;
+  
   }
-
+.FormularioRegistro { 
+  background-color: black;
+}
   .foto{
     background-image: url(https://mba.americaeconomia.com/sites/mba.americaeconomia.com/files/styles/article_full_width/public/field/image/man-1209494_1920.jpg?itok=zLJIltVr);
     background-position: center;

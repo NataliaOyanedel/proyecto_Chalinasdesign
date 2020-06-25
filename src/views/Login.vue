@@ -6,15 +6,24 @@
 </template>
 
 <script>
-import FormularioLogin from "../components/FormularioLogin";
+import FormularioLogin from "../components/FormularioLogin.vue";
 export default {
   name: 'Login',
   components: {
     FormularioLogin
   },
-  beforeCreate() {
-    let user = JSON.parse(localStorage.getItem('user'))
-    user ? this.$router.push({name: 'Home'}) : false 
-  }
+  
 };
 </script>
+ <style lang="scss">
+ 
+ .about { 
+   background-color: wheat;
+   padding-top: 100px;
+
+ }
+
+ h1 { 
+   text-align: center;
+ }
+ </style>

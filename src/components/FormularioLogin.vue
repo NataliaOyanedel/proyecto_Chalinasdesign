@@ -49,5 +49,6 @@ export default {
   border: 1px solid;
   padding: 20px;
   border-radius: 15px;
+  color: brown;
 }
 </style>

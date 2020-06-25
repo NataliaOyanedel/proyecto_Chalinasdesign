@@ -2,6 +2,7 @@
   <div class="about">
     <h1>Registrar</h1>
     <FormularioRegistro  :datos="datos" />
+    
   </div>
 </template>
 
@@ -41,6 +42,7 @@ export default {
   text-align: center;
   padding-top: 100px;
  color: palevioletred;
+ 
 
 }
 

@@ -1,24 +1,18 @@
 <template>
-  <div id="app">
-    <div id="nav">
-
- <FormularioRegistro/>
- 
-  <Navegacion/>
-
-    </div>
+  <div>
+    <Navegacion/>
     <router-view/>
+      <Footer/>
   </div>
 </template>
 
 <script>
-import Navegacion from '../src/components/Navegacion.vue'
-
-
+import Navegacion from './components/Navegacion.vue'
+import Footer from './components/Footer.vue'
 
 export default  { 
   components: {
-    Navegacion
+    Navegacion,Footer
   }
 }
 </script>
