@@ -7,8 +7,9 @@
 
 <script>
 import FormularioLogin from "../components/FormularioLogin.vue";
+
 export default {
-  name: 'Login',
+  name: 'about',
   components: {
     FormularioLogin
   },
@@ -18,12 +19,15 @@ export default {
  <style lang="scss">
  
  .about { 
-   background-color: wheat;
-   padding-top: 100px;
-
+  background-image: url('../assets/img/foto333.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+  color: yellow;
  }
 
- h1 { 
-   text-align: center;
- }
+
  </style>

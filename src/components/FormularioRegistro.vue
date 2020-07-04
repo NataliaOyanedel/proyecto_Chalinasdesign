@@ -6,7 +6,7 @@
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Nombre</label>
-      <input type="text" class="form-control" v-model="name" />
+      <input type="text" class="form-control" v-model="nombreUser" />
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Correo electrónico</label>
@@ -16,44 +16,51 @@
       <label for="exampleInputPassword1">Contraseña</label>
       <input v-model="password" type="password" class="form-control" />
     </div>
-    <button @click="registrar" class="btn btn-primary">Registrar</button>
-  </div>
+    <button @click="registrarUsuario" class="btn btn-primary">Registrar</button>
+ 
+ </div>
+
+
 </template>
 
+
+
 <script>
+import firebase from 'firebase'; 
+
 export default {
   props: ["datos"],
-  data() {
-    return {
-      password: ""
-    };
-  },
-  methods: {
-    registrar() {
-      let perfil = {
-        imgSrc: this.datos.picture.large,
-        email: this.datos.email,
-        name: this.name,
-        password: this.password
-      };
-      let perfiles = JSON.parse(localStorage.getItem("perfiles"));
-      perfiles.push(perfil);
-      localStorage.setItem("perfiles", JSON.stringify(perfiles));
-      this.$router.push({name: 'Login'})
-    }
-  },
-  mounted() {
-    localStorage.getItem("perfiles") == null
-      ? localStorage.setItem("perfiles", JSON.stringify([]))
-      : false;
-  },
-  computed: {
-    name() {
-      return `${this.datos.name.first} ${this.datos.name.last}`;
-    }
-  }
-};
+   data() {
+        return {
+            email:'',
+            password: '',
+            nombreUser: ''
+          
+        }
+    },
+    methods: {
+        registrarUsuario(){
+            if (this.nombreUser && this.email && this.password){
+                firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(response=>{
+                    console.log(response.user)
+                    return response.user.updateProfile({
+                        displayName: this.nombreUser
+                    }).then(()=>{
+                        this.nombreUser = '';
+                        this.email = '';
+                        this.password = '';
+                        this.$router.push('/');
+                    })
+                }).catch(error => console.error(error))
+            }else{
+                alert("Ingrese un correo y una contraseña");
+            }
+        }
+    },
+}
 </script>
+  
+
 
 <style lang="scss">
 

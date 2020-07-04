@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="registro">
     <h1>Registrar</h1>
     <FormularioRegistro  :datos="datos" />
     
@@ -38,10 +38,15 @@ export default {
 </script>
 
 <style lang="scss">
-.about { 
+.registro { 
   text-align: center;
   padding-top: 100px;
- color: palevioletred;
+ color: yellow;
+   background-image: url('../assets/img/foto55.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
  
 
 }

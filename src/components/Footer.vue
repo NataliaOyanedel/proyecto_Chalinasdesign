@@ -1,27 +1,29 @@
 <template>
-  <div class="footer">
-<!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Chalinas Design_</h3>
-      <p>Acogedoras Ruanas que impulsan nuestra cultura e identidad nacional.</p>
-      <div class="social-links">
+<div class="footer">
 
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-   
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>ChalinasDesign_</span></strong>. All Rights Reserved
-      </div>
+ <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+     
+
+      <p>&copy; Copyrights Chalinas ChalinasDesign_. All rights reserved.</p>
+
       <div class="credits">
-       
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
         Designed by <a href="">ChalinasDesign_</a>
       </div>
+
     </div>
-  </footer><!-- End Footer -->
+  </div><!-- End Footer -->
+</div>
+
    
-  </div>
+
 </template>
 
 <script>
@@ -37,77 +39,66 @@ export default {
 <style >
 
 #footer {
-  background: url("../assets/img/fondo-footer.jpg") top center no-repeat;
-  background-size: cover;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 80px 0;
-  position: relative;
+  background: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-#footer::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+#footer .socials-media {
+  width: 100%;
 }
 
-#footer .container {
-  position: relative;
+#footer .socials-media ul {
+  display: inline-block;
+  float: none;
+  margin: 0 0 20px 0;
 }
 
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  font-family: "Satisfy", serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+#footer .socials-media ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer .socials-media ul li a {
+  font-size: 24px;
+  color:white;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#footer .socials-media ul li a:hover {
+  color: white;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
   font-size: 18px;
-  display: inline-block;
-  background: #ffb727;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
-#footer .social-links a:hover {
-  background: #f3a200;
-  color: #fff;
-  text-decoration: none;
-}
 
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
 
-#footer .credits {
-  font-size: 13px;
-}
+ #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
 
+
+@media (max-width: 320px) {
+    #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+}
 </style>

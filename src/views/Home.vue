@@ -9,8 +9,9 @@
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
-
+<productos/>
 </div>
+
 </template>
 
 <script>

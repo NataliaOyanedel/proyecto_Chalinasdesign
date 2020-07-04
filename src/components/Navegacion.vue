@@ -7,7 +7,7 @@
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><router-link to="/Home" href="index.html">Home</router-link></li>
+        <li class="active"><router-link to="/Home" >Home</router-link></li>
         <li><router-link to="/Productos"  href="#about">Productos</router-link></li>
         <li><router-link to="Login" href="#resume">Login</router-link></li>
         <li><router-link to="Registro" href="#services">Registrarse</router-link></li>
@@ -207,7 +207,7 @@ export default {
 .mobile-nav * {
   margin: 0;
   padding: 0;
-  list-style: none;
+ 
 }
 
 .mobile-nav a {
